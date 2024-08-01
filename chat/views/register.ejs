@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>chatsapp2</title>
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+
+  <style>
+    * {
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+      font-family: gilroy;
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+    }
+
+    #main{
+      background-color: #000;
+      gap: 10px;
+    }
+    
+    #form{
+      padding-top: 20px;
+      height: 68vh;
+      width: 30vw;
+      filter: drop-shadow(5px 8px 10px darkgreen);
+      border-radius: 20px;
+      background-color: #111B21;
+    }
+    .form-group{
+      padding: 8px 45px;
+    }
+    
+   .form .btn{
+     padding-left: 20px;
+   }
+  
+   #images{
+    width: 50%;
+    object-fit: cover;
+    display: flex;
+    object-position: center;
+    flex-direction: column;
+    border-radius: 20px;
+    z-index: 99;
+    filter: drop-shadow(2px 5px 8px darkgreen);
+   }
+   #form h2{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgreen;
+   }
+   a{
+    margin-left: 44px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    color: darkgreen;
+    transition: all ease 0.4s;
+   }
+   a:hover{
+    color: white;
+    scale: 1.1;
+   }
+  </style>
+
+</head>
+
+<body>
+  <div id="main" class="w-100 h-100 d-flex justify-content-center align-items-center">
+    <div id="images">
+      <img src="https://www.livemint.com/lm-img/img/2023/08/18/600x338/whatsapp_1672773708207_1685324752206_1692358132292.jpg" alt="#">
+    </div>
+    <form action="/register" method="post" id="form" class="col-4">
+      <h2>Welcome To Chatsapp</h2>
+      <div class="form-group mb-3 text-light">
+        <label for="username">Enter username</label>
+        <input name="username" type="text" class="form-control" id="username" placeholder="Enter username">
+      </div>
+      <div class="form-group mb-3 text-light">
+        <label for="contact">Contact number</label>
+        <input name="contact" type="text" class="form-control" id="contact" placeholder="Enter contact">
+      </div>
+      <div class="form-group mb-3 text-light">
+        <label for="password">Enter password</label>
+        <input name="password" type="password" class="form-control" id="password" placeholder="Enter password">
+      </div>
+      <button type="submit" class="btn btn-success ms-5">Create user</button>
+      <br>
+      <a href="/login">Already Have An Account-</a>
+    </form>
+  </div>
+
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous'></script>
+</body>
+
+</html>
